@@ -215,7 +215,7 @@ def hangman(secret_word):
             if is_word_guessed(secret_word, letters_guessed):
                 print("Вы угадали слово: "+secret_word)
                 score = attempts*get_unique_letter(secret_word)
-                print("Вы заработали %d очков")
+                print("Вы заработали %d очков"%(score))
                 in_game = False
             else:
                 print("Попробуйте еще. У Вас осталось %d попыток."%(attempts))
@@ -336,7 +336,7 @@ def hangman_with_hints(secret_word):
             if is_word_guessed(secret_word, letters_guessed):
                 print("Вы угадали слово: "+secret_word)
                 score = attempts*get_unique_letter(secret_word)
-                print("Вы заработали %d очков")
+                print("Вы заработали %d очков"%(score))
                 in_game = False
             else:
                 print("Попробуйте еще. У Вас осталось %d попыток."%(attempts))
